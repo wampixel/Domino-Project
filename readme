@@ -1,0 +1,56 @@
+technologies utilisées :
+  -HTML5
+  -CSS3
+  -JavaScript
+  -PHP (oui pour la génération de situation initiale des jeux)
+  -BabylonJs (webGL pour la génération 3D)
+  -JQuery (allege l’écriture du Js et ajoute une bibliothèque de fonction bien dense)
+  -Bootstrap (framework CSS, pour faciliter le dev et la prise en charges des différentes machines susceptible d’être utilisé)
+
+Si vous pensez a des nouvelles biblio en js, php, ou d'autres frameworks léger (n'oublions pas que nous utilisons un raspberry pi 2)
+
+mise en place des formats de page,
+un template de page standard, 
+un contenu par page présent,
+un template par jeu propose par le site.
+
+
+présentation projet :
+  Domino_Project
+     Documentation //contient la doc du projet et les spécifications
+     www //contient le code source du projet
+     LICENSE // licence du projet (GPL3)
+     README.md // readme du projet a mettre a jour très régulièrement
+     changelog.log // une fois la première version stable, donne les changements apportées au projet
+     index.html // un fichier de base pour la protection du projet
+
+changelog x.y.z
+x : dernière version stable
+y : fonctionnalités mineures ajoutées au projet
+z : fix des bugs léger
+
+Convention de nommage a respecter au maximum:
+  variable de boucle : i, j, k
+  variables : au plus possible représentative de son type et de son utilité
+           (exemple : un compteur forcement entier qui permet de savoir le nombre de lignes nline ou linen)
+  noms de fonctions (applicable aux méthodes) :
+   -fonctions booléennes : is_X avec x la condition true de la fonction
+           (is_win -> retourne vrai si et seulement si tu as gagné)
+                        : has_X avec X la condition a avoir pour être vraie
+           (Has_winningStrat -> retourne vrai si et seulement il existe une stratégie gagnante)
+   -fonctions autres :
+          au maximum descriptif de la fonction (pas de fun greg...) préfixé par le nom du jeu (abrégé a la rigueur).
+   
+   -noms de fichiers : au maximum descriptif de l’utilité (on préférera du modulaire a un fichier unique !)
+fichiers
+
+convention de commentaire :
+-Premier commentaire, nom prénom du codeur et si plusieurs liste.
+-descriptif du fichier.
+-descriptif au dessus de chaque implémentation de fonction/ méthodes (pas au dessus du prototype)
+-@since et @version (depuis quand et quelle version existe la méthode/fonction)
+-@package si on utilise les paquets
+
+Si vous voulez voir comment je procède pour nommer mes fichiers, mes dossiers, ect regardez : https://github.com/wampixel/nim-games
+
+Merci de votre participation et faisons le plus proprement possible pour pouvoir faire perdurer au maximum ce projet.
